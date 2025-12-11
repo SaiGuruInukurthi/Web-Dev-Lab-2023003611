@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GATE Score Card (Inline CSS)</title>
+  <meta name="description" content="Recreation of the GATE Score Card using HTML with inline CSS." />
+</head>
+<body style="margin:0;font-family:Arial, Helvetica, sans-serif;background:#f5f7f6;padding:30px;">
+  <div style="width:900px;margin:20px auto;background:linear-gradient(180deg,#f6fdfb 0%,#ffffff 50%);border-radius:12px;padding:22px;box-shadow:0 6px 24px rgba(0,0,0,0.08);border:1px solid rgba(30,132,113,0.06);position:relative;overflow:hidden;">
+    <!-- Watermark layers -->
+    <div style="position:absolute;inset:0;pointer-events:none;z-index:1;overflow:hidden">
+      <div style="position:absolute;inset:0;pointer-events:none;background-image:url('data:image/svg+xml;utf8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 260 100\'%3E%3Ctext x=\'0\' y=\'72\' font-family=\'Arial\' font-size=\'20\' fill=\'%23000000\' fill-opacity=\'0.12\'%3EGATE%202025%3C/text%3E%3C/svg%3E');background-repeat:repeat;background-size:130px 40px;transform:rotate(-22deg);mix-blend-mode:multiply;opacity:0.7;"></div>
+      <div style="position:absolute;inset:0;pointer-events:none;background-image:url('data:image/svg+xml;utf8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 260 100\'%3E%3Ctext x=\'0\' y=\'72\' font-family=\'Arial\' font-size=\'20\' fill=\'%23ffffff\' fill-opacity=\'0.18\'%3EGATE%202025%3C/text%3E%3C/svg%3E');background-repeat:repeat;background-size:130px 40px;transform:rotate(-22deg);mix-blend-mode:screen;opacity:0.85;"></div>
+    </div>
+
+    <div style="position:absolute;top:0;left:0;right:0;height:50px;pointer-events:none;background-image:repeating-linear-gradient(90deg, rgba(200,220,210,0.08) 0 5px, transparent 6px 18px);opacity:0.7;z-index:2"></div>
+
+    <div style="display:flex;gap:20px;position:relative;z-index:3">
+      <div style="flex:1">
+        <div style="display:flex;border-bottom:1px dashed rgba(120,150,140,0.14);align-items:center;padding:9px 10px;background:rgba(224,249,242,0.7)">
+          <div style="width:225px;color:#2b6b63;font-weight:600;font-size:13px">Name of the Candidate</div>
+          <div style="flex:1;color:#112b2a;font-size:15px;padding-left:12px">Loki Laufeyson</div>
+        </div>
+        <div style="display:flex;border-bottom:1px dashed rgba(120,150,140,0.14);align-items:center;padding:9px 10px;">
+          <div style="width:225px;color:#2b6b63;font-weight:600;font-size:13px">Name of the Parent/Guardian</div>
+          <div style="flex:1;color:#112b2a;font-size:15px;padding-left:12px">Frigga Laufeyson</div>
+        </div>
+        <div style="display:flex;border-bottom:1px dashed rgba(120,150,140,0.14);align-items:center;padding:9px 10px;background:rgba(224,249,242,0.7)">
+          <div style="width:225px;color:#2b6b63;font-weight:600;font-size:13px">Registration No.</div>
+          <div style="flex:1;color:#112b2a;font-size:15px;padding-left:12px">XXXXXXXXXX</div>
+        </div>
+        <div style="display:flex;border-bottom:1px dashed rgba(120,150,140,0.14);align-items:center;padding:9px 10px;">
+          <div style="width:225px;color:#2b6b63;font-weight:600;font-size:13px">Date of Birth</div>
+          <div style="flex:1;color:#112b2a;font-size:15px;padding-left:12px">dd/mm/yyyy</div>
+        </div>
+        <div style="display:flex;border-bottom:1px dashed rgba(120,150,140,0.14);align-items:center;padding:9px 10px;background:rgba(224,249,242,0.7)">
+          <div style="width:225px;color:#2b6b63;font-weight:600;font-size:13px">Test Paper</div>
+          <div style="flex:1;color:#112b2a;font-size:15px;padding-left:12px">Computer Science and Information Technology (CS)</div>
+        </div>
+        <div style="display:flex;border-bottom:1px dashed rgba(120,150,140,0.14);align-items:center;padding:9px 10px;">
+          <div style="width:225px;color:#2b6b63;font-weight:600;font-size:13px">Date of Examination</div>
+          <div style="flex:1;color:#112b2a;font-size:15px;padding-left:12px">February 1, 2025</div>
+        </div>
+        <div style="display:flex;border-bottom:1px dashed rgba(120,150,140,0.14);align-items:center;padding:9px 10px;background:rgba(224,249,242,0.7)">
+          <div style="width:225px;color:#2b6b63;font-weight:600;font-size:13px">GATE Score</div>
+          <div style="flex:1;color:#112b2a;font-size:15px;padding-left:12px">460</div>
+        </div>
+        <div style="display:flex;align-items:center;padding:9px 10px;">
+          <div style="width:225px;color:#2b6b63;font-weight:600;font-size:13px">*Marks out of 100</div>
+          <div style="flex:1;color:#112b2a;font-size:15px;padding-left:12px">39.97</div>
+        </div>
+      </div>
+
+      <div style="width:240px;position:relative">
+        <div style="width:180px;height:180px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:12px;color:#285042;border:6px solid #e6efe8;background:linear-gradient(180deg,#eaf5ef,#dff0ea);box-shadow:0 2px 6px rgba(30,50,50,0.06);overflow:hidden;margin-bottom:8px;">
+          <img src="../Gate_scorecard_internal/Loki.png" alt="Candidate photo: Loki" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:6px;"/>
+        </div>
+        <div style="margin-top:16px;width:180px;height:60px;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.12);display:flex;align-items:center;justify-content:center;color:#6f6f6f;font-size:14px;overflow:hidden;">
+          <img src="../Gate_scorecard_internal/Loki_sig.png" alt="Candidate signature" style="width:100%;height:100%;object-fit:contain;display:block;" />
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex;margin-top:20px;gap:16px;align-items:flex-start;position:relative;z-index:3">
+      <div style="flex:1;background:#e9f5f0;border-radius:8px;padding:18px;border:1px solid rgba(30,90,80,0.06)">
+        <div style="display:flex">
+          <div style="flex:1;padding-right:14px">
+            <div style="font-weight:700;color:#2a6b62;margin-bottom:8px">All India Rank (AIR) in the test paper:</div>
+            <div style="font-size:14px;color:#0e3933">9448</div>
+            <div style="height:8px"></div>
+            <div style="font-weight:700;color:#2a6b62;margin-bottom:8px">Number of candidates appeared for the test paper:</div>
+            <div style="font-size:14px;color:#0e3933">170825</div>
+          </div>
+          <div style="width:220px;padding-left:14px;border-left:1px dashed rgba(20,70,62,0.06)">
+            <div style="font-weight:700;color:#2a6b62;margin-bottom:8px">Qualifying Marks</div>
+            <div style="display:flex;flex-direction:column;gap:6px">
+              <div style="display:flex;justify-content:space-between;color:#08403a"><span>General:</span><span>29.2</span></div>
+              <div style="display:flex;justify-content:space-between;color:#08403a"><span>EWS/OBC-NCL:</span><span>26.2</span></div>
+              <div style="display:flex;justify-content:space-between;color:#08403a"><span>SC/ST/PwD:</span><span>19.4</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="width:280px;padding-left:20px">
+        <div style="font-size:13px;color:#2b2b2b;line-height:1.5;margin-bottom:14px">A candidate is considered qualified if the marks secured are greater than or equal to the qualifying marks mentioned for the category, for which a valid category certificate, if applicable, must be produced along with this Score Card.</div>
+        <div style="background:#b5e7d2;color:#062b20;padding:10px 12px;border-radius:14px;font-weight:700;display:inline-block;font-size:13px;margin-top:8px">This Score Card is valid up to 31st March 2028.</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:16px;align-items:center;margin-top:26px;position:relative;z-index:3">
+      <div style="flex:1">
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <div style="font-weight:700;font-size:15px;color:#052a20">Prof. P. Arunagiri</div>
+          <div style="font-size:13px;color:#6c6c6c">Organising Chairperson, GATE 2025<br/>On behalf of NCB-GATE<br/>Ministry of Education (MoE)</div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px;align-items:center;">
+        <div style="width:96px;height:96px;border-radius:6px;background:#ffffff;display:flex;align-items:center;justify-content:center;border:1px solid rgba(0,0,0,0.08)">
+          <img src="../Gate_scorecard_internal/Rickroll QR.png" alt="QR code" style="width:72px;height:72px;object-fit:contain;border-radius:4px;"/>
+        </div>
+        <div style="font-size:11px;color:#5a5a5a;">Unique ID: 07abeb8141e2fbcefe8fe6118fed645ef</div>
+      </div>
+    </div>
+
+    <div style="position:absolute;right:22px;bottom:18px;background:#bfead9;color:#0d4b38;padding:10px 14px;border-radius:30px;font-weight:700;font-size:13px;z-index:3">Valid up to 31st March 2028</div>
+  </div>
+
+  <div style="max-width:900px;margin:12px auto;font-size:12px;color:#3d5852;">Use this page to preview and print the card. The content is approximate and for mock/demo purposes only.</div>
+</body>
+</html>
