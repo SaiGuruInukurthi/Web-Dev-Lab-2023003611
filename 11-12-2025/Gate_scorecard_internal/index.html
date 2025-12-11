@@ -22,6 +22,8 @@
       position:relative;
       overflow:hidden;
     }
+    /* Ensure content appears over watermark */
+    .card > *{position:relative;z-index:2}
 
     /* subtle dotted background pattern on the card */
     .card:before{
@@ -89,6 +91,14 @@
     .qr{width:96px;height:96px;border-radius:6px;background:#ffffff;display:flex;align-items:center;justify-content:center;border:1px solid rgba(0,0,0,0.08)}
     .qr img{width:72px;height:72px;object-fit:contain;border-radius:4px}
 
+    /* Watermark layers: grey for white areas, white overlay for green areas */
+    .watermark{position:absolute;inset:0;pointer-events:none;z-index:1;overflow:hidden}
+    .watermark::before, .watermark::after{content:"";position:absolute;inset:0;pointer-events:none;background-repeat:repeat;background-size:130px 40px;transform:rotate(-22deg);opacity:0.9}
+    /* Grey watermark shows on light backgrounds */
+    .watermark::before{background-image:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 100'%3E%3Ctext x='0' y='72' font-family='Arial' font-size='20' fill='%23000000' fill-opacity='0.12'%3EGATE%202025%3C/text%3E%3C/svg%3E");mix-blend-mode:multiply;opacity:0.7}
+    /* White watermark overlay to make the text white on green parts */
+    .watermark::after{background-image:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 100'%3E%3Ctext x='0' y='72' font-family='Arial' font-size='20' fill='%23ffffff' fill-opacity='0.18'%3EGATE%202025%3C/text%3E%3C/svg%3E");mix-blend-mode:screen;opacity:0.85}
+
     .validity{position:absolute;right:22px;bottom:18px;background:#bfead9;color:#0d4b38;padding:10px 14px;border-radius:30px;font-weight:700;font-size:13px}
 
     /* responsiveness */
@@ -108,6 +118,7 @@
 </head>
 <body>
   <div class="card">
+    <div class="watermark" aria-hidden="true"></div>
     <div class="top">
       <div class="left-panel">
         <div class="grid-row">
