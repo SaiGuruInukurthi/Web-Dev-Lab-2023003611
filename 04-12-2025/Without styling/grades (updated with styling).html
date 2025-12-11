@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Performance Report</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin: 30px 0 20px 0;
+            padding: 15px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            color: white;
+        }
+        
+        table {
+            width: 100%;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+            border-collapse: collapse;
+        }
+        
+        thead {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+        
+        thead th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            color: white;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            letter-spacing: 0.5px;
+        }
+        
+        tbody tr {
+            transition: all 0.3s ease;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        tbody tr:hover {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            transform: scale(1.02);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        td:first-child {
+            font-weight: 600;
+            color: #667eea;
+        }
+        
+        td:last-child {
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+        
+        /* Grade colors */
+        td:last-child {
+            color: #27ae60;
+        }
+        
+        p {
+            background: white;
+            padding: 15px 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-size: 1.1em;
+        }
+        
+        p strong {
+            color: #667eea;
+        }
+        
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, white, transparent);
+            margin: 40px 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            table {
+                font-size: 0.9em;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Academic Performance Report</h1>
+
+    <h2>Semester 1 – Academic Performance Report</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Course Code</th>
+                <th>Course Title</th>
+                <th>Credits</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CLAD1001</td>
+                <td>Emotional Intelligence and Reasoning Skills</td>
+                <td>1</td>
+                <td>B+</td>
+            </tr>
+            <tr>
+                <td>CSEN1001</td>
+                <td>IT Productivity Tools</td>
+                <td>1</td>
+                <td>S</td>
+            </tr>
+            <tr>
+                <td>CSEN1011</td>
+                <td>Problem Solving and Programming in C</td>
+                <td>3</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>LANG1012</td>
+                <td>Communication Skills in English – Intermediate</td>
+                <td>2</td>
+                <td>O</td>
+            </tr>
+            <tr>
+                <td>MATH1001</td>
+                <td>Single Variable Calculus</td>
+                <td>2</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>MATH1011</td>
+                <td>Several Variable Calculus</td>
+                <td>2</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>MECH1011</td>
+                <td>Engineering Visualization and Product Realization</td>
+                <td>2</td>
+                <td>O</td>
+            </tr>
+            <tr>
+                <td>PHYS1001</td>
+                <td>Physics</td>
+                <td>4</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <td>VEDC1001</td>
+                <td>Venture Development</td>
+                <td>2</td>
+                <td>O</td>
+            </tr>
+        </tbody>
+    </table>
+    <p><strong>SGPA (Semester Grade Point Average): 8.5</strong></p>
+    <p><strong>CGPA (Cumulative Grade Point Average): 8.5</strong></p>
+
+    <hr>
+
+    <h2>Semester 2 – Academic Performance Report</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Course Code</th>
+                <th>Course Title</th>
+                <th>Credits</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CHEM1001</td>
+                <td>Chemistry</td>
+                <td>4</td>
+                <td>B+</td>
+            </tr>
+            <tr>
+                <td>CLAD1011</td>
+                <td>Leadership Skills and Quantitative Aptitude</td>
+                <td>1</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>CSEN1021</td>
+                <td>Programming with Python</td>
+                <td>3</td>
+                <td>O</td>
+            </tr>
+            <tr>
+                <td>DOSP1131</td>
+                <td>Functional Fitness</td>
+                <td>2</td>
+                <td>S</td>
+            </tr>
+            <tr>
+                <td>EECE1001</td>
+                <td>Basic Electrical and Electronics Engineering</td>
+                <td>4</td>
+                <td>B+</td>
+            </tr>
+            <tr>
+                <td>LANG1022</td>
+                <td>Communication Skills in English – Advanced</td>
+                <td>2</td>
+                <td>O</td>
+            </tr>
+            <tr>
+                <td>MATH1041</td>
+                <td>Discrete Mathematics</td>
+                <td>2</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>MATH1051</td>
+                <td>Graph Theory</td>
+                <td>2</td>
+                <td>B+</td>
+            </tr>
+            <tr>
+                <td>MECH1021</td>
+                <td>Workshop</td>
+                <td>2</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <td>MECH3091</td>
+                <td>Additive Manufacturing</td>
+                <td>3</td>
+                <td>O</td>
+            </tr>
+            <tr>
+                <td>POLS1001</td>
+                <td>Indian Constitution and History</td>
+                <td>2</td>
+                <td>S</td>
+            </tr>
+        </tbody>
+    </table>
+    <p><strong>SGPA (Semester Grade Point Average): 8.35</strong></p>
+    <p><strong>CGPA (Cumulative Grade Point Average): 8.41</strong></p>
+
+    <hr>
+
+    <h2>Semester 3 – Academic Performance Report</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Course Code</th>
+                <th>Course Title</th>
+                <th>Credits</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CLAD1021</td>
+                <td>Verbal Ability and Quantitative Ability (Soft Skills 3)</td>
+                <td>1</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>CSEN1031</td>
+                <td>Artificial Intelligence Applications</td>
+                <td>1</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <td>CSEN1041</td>
+                <td>Computer Engineering Workshop</td>
+                <td>1</td>
+                <td>O</td>
+            </tr>
+            <tr>
+                <td>CSEN1051</td>
+                <td>Digital Logic Circuit</td>
+                <td>3</td>
+                <td>B+</td>
+            </tr>
+            <tr>
+                <td>CSEN1071</td>
+                <td>Data Communications</td>
+                <td>2</td>
+                <td>O</td>
+            </tr>
+            <tr>
+                <td>CSEN2001</td>
+                <td>Data Structures</td>
+                <td>4</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <td>ENVS1001</td>
+                <td>Environmental Studies</td>
+                <td>3</td>
+                <td>S</td>
+            </tr>
+            <tr>
+                <td>MATH2291</td>
+                <td>Linear Algebra</td>
+                <td>2</td>
+                <td>B+</td>
+            </tr>
+            <tr>
+                <td>MATH2311</td>
+                <td>Number Theory</td>
+                <td>2</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>MATH2531</td>
+                <td>Statistical Methods I</td>
+                <td>3</td>
+                <td>B+</td>
+            </tr>
+            <tr>
+                <td>PHYS1021</td>
+                <td>Principles of Quantum Mechanics</td>
+                <td>4</td>
+                <td>A</td>
+            </tr>
+        </tbody>
+    </table>
+    <p><strong>SGPA (Semester Grade Point Average): 8.04</strong></p>
+    <p><strong>CGPA (Cumulative Grade Point Average): 8.28</strong></p>
+
+    <hr>
+
+    <h2>Semester 4 – Academic Performance Report</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Course Code</th>
+                <th>Course Title</th>
+                <th>Credits</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CIVL1001</td>
+                <td>Basics of Geographic Information Systems</td>
+                <td>3</td>
+                <td>B+</td>
+            </tr>
+            <tr>
+                <td>CLAD1031</td>
+                <td>Practicing Verbal Ability and Quantitative Aptitude (Soft Skills 4)</td>
+                <td>1</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <td>CSEN1101</td>
+                <td>Operating Systems</td>
+                <td>4</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <td>CSEN1111</td>
+                <td>Object Oriented Programming with Java</td>
+                <td>2</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>CSEN2011</td>
+                <td>Computer Organization and Architecture</td>
+                <td>3</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>CSEN2021</td>
+                <td>Computer Networks</td>
+                <td>4</td>
+                <td>O</td>
+            </tr>
+            <tr>
+                <td>CSEN3151</td>
+                <td>Advanced Data Structures</td>
+                <td>3</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>MATH2361</td>
+                <td>Probability and Statistics</td>
+                <td>3</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <td>MECH1001</td>
+                <td>Design Thinking</td>
+                <td>1</td>
+                <td>O</td>
+            </tr>
+            <tr>
+                <td>PHYP1001</td>
+                <td>Gandhi for the 21st Century</td>
+                <td>2</td>
+                <td>S</td>
+            </tr>
+        </tbody>
+    </table>
+    <p><strong>SGPA (Semester Grade Point Average): 8.63</strong></p>
+    <p><strong>CGPA (Cumulative Grade Point Average): 8.38</strong></p>
+
+    </div>
+</body>
+</html>

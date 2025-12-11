@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GATE Score Card (Recreated)</title>
+  <meta name="description" content="Recreation of the GATE Score Card using HTML and inline CSS (internal styles)." />
+  <style>
+    /* Inline CSS inside head - kept in one file for portability
+       This is internal CSS (located inside the html) to keep everything in a single file. */
+    body{margin:0;font-family: Arial, Helvetica, sans-serif;background:#f5f7f6;padding:30px;}
+    .credit{font-size:11px;color:#6a6a6a;margin-bottom:10px}
+
+    .card{
+      width:900px;
+      margin:20px auto;
+      background:linear-gradient(180deg,#f6fdfb 0%,#ffffff 50%);
+      border-radius:12px;
+      padding:22px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+      border:1px solid rgba(30,132,113,0.06);
+      position:relative;
+      overflow:hidden;
+    }
+
+    /* subtle dotted background pattern on the card */
+    .card:before{
+      content:"";
+      position:absolute;
+      top:0;left:0;right:0;height:50px;
+      background-image:repeating-linear-gradient(90deg, rgba(200,220,210,0.08) 0 5px, transparent 6px 18px);
+      pointer-events:none;
+      opacity:0.7;
+    }
+
+    .top{
+      display:flex;
+      gap:20px;
+    }
+
+    .left-panel{flex:1}
+    .right-panel{width:240px}
+
+    .grid-row{display:flex;border-bottom:1px dashed rgba(120,150,140,0.14);align-items:center;padding:9px 10px}
+    /* Alternating rows for the left panel */
+    .left-panel .grid-row:nth-child(odd){background:rgba(224,249,242,0.7)}
+    .left-panel .grid-row:nth-child(even){background:transparent}
+    .grid-row:last-child{border-bottom:none}
+    .label{width:225px;color:#2b6b63;font-weight:600;font-size:13px}
+    .value{flex:1;color:#112b2a;font-size:15px;padding-left:12px}
+
+    /* Avatar/photo placeholder */
+    .photo{width:180px;height:180px;background:linear-gradient(180deg,#eaf5ef,#dff0ea);border-radius:8px;box-shadow:0 2px 6px rgba(30,50,50,0.06);display:flex;align-items:center;justify-content:center;font-size:12px;color:#285042;border:6px solid #e6efe8;overflow:hidden}
+    .photo img{width:100%;height:100%;object-fit:cover;display:block;border-radius:6px}
+
+    /* small signature block */
+    .sig{margin-top:16px;width:180px;height:60px;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,0.12);display:flex;align-items:center;justify-content:center;color:#6f6f6f;font-size:14px;overflow:hidden}
+    .sig img{width:100%;height:100%;object-fit:contain;display:block}
+
+    .middle{
+      display:flex;margin-top:20px;gap:16px;align-items:flex-start
+    }
+    .info-box{flex:1;background:#e9f5f0;border-radius:8px;padding:18px;border:1px solid rgba(30,90,80,0.06)}
+    .info-grid{display:flex}
+    .info-left{flex:1;padding-right:14px}
+    .info-right{width:220px;padding-left:14px;border-left:1px dashed rgba(20,70,62,0.06)}
+
+    .info-title{font-weight:700;color:#2a6b62;margin-bottom:8px}
+    .info-lines{font-size:14px;color:#0e3933}
+
+    .qual-list{display:flex;flex-direction:column;gap:6px}
+    .qual-item{display:flex;justify-content:space-between;color:#08403a}
+    .qual-item small{color:#2c7e6d}
+
+    .right-summary{width:280px;padding-left:20px}
+    .note{font-size:13px;color:#2b2b2b;line-height:1.5;margin-bottom:14px}
+
+    .badge{
+      background:#b5e7d2;color:#062b20;padding:10px 12px;border-radius:14px;font-weight:700;display:inline-block;font-size:13px;margin-top:8px
+    }
+
+    .footer{display:flex;gap:16px;align-items:center;margin-top:26px}
+    .footer .left{flex:1}
+
+    .signature-block{display:flex;flex-direction:column;gap:6px}
+    .sig-name{font-weight:700;font-size:15px;color:#052a20}
+    .sig-meta{font-size:13px;color:#6c6c6c}
+
+    .qr{width:96px;height:96px;border-radius:6px;background:#ffffff;display:flex;align-items:center;justify-content:center;border:1px solid rgba(0,0,0,0.08)}
+    .qr img{width:72px;height:72px;object-fit:contain;border-radius:4px}
+
+    .validity{position:absolute;right:22px;bottom:18px;background:#bfead9;color:#0d4b38;padding:10px 14px;border-radius:30px;font-weight:700;font-size:13px}
+
+    /* responsiveness */
+    @media (max-width:980px){
+      .card{width:95%}
+      .right-panel{width:170px}
+      .photo{width:150px;height:150px}
+    }
+
+    @media (max-width:700px){
+      .top{flex-direction:column}
+      .middle{flex-direction:column}
+      .right-summary{width:auto;padding-left:0}
+      .left-panel .label{width:170px}
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="top">
+      <div class="left-panel">
+        <div class="grid-row">
+          <div class="label">Name of theCandidate</div>
+          <div class="value">Loki Laufeyson</div>
+        </div>
+        <div class="grid-row">
+          <div class="label">Name of the Parent/Guardian</div>
+          <div class="value">Frigga Laufeyson</div>
+        </div>
+        <div class="grid-row">
+          <div class="label">Registration No.</div>
+          <div class="value">XXXXXXXXXX</div>
+        </div>
+        <div class="grid-row">
+          <div class="label">Date of Birth</div>
+          <div class="value">dd/mm/yyyy</div>
+        </div>
+        <div class="grid-row">
+          <div class="label">Test Paper</div>
+          <div class="value">Computer Science and Information Technology (CS)</div>
+        </div>
+        <div class="grid-row">
+          <div class="label">Date of Examination</div>
+          <div class="value">February 1, 2025</div>
+        </div>
+        <div class="grid-row">
+          <div class="label">GATE Score</div>
+          <div class="value">460</div>
+        </div>
+        <div class="grid-row">
+          <div class="label">*Marks out of 100</div>
+          <div class="value">39.97</div>
+        </div>
+      </div>
+      <div class="right-panel">
+        <div class="photo" style="margin-bottom:8px;">
+          <img src="Loki.png" alt="Candidate photo: Loki" />
+        </div>
+        <div class="sig">
+          <img src="Loki_sig.png" alt="Candidate signature" />
+        </div>
+      </div>
+    </div>
+
+    <div class="middle">
+      <div class="info-box">
+        <div class="info-grid">
+          <div class="info-left">
+            <div class="info-title">All India Rank (AIR) in the test paper:</div>
+            <div class="info-lines">9448</div>
+            <div style="height:8px"></div>
+            <div class="info-title">Number of candidates appeared for the test paper:</div>
+            <div class="info-lines">170825</div>
+          </div>
+          <div class="info-right">
+            <div class="info-title">Qualifying Marks</div>
+            <div class="qual-list">
+              <div class="qual-item"><span>General:</span> <span>29.2</span></div>
+              <div class="qual-item"><span>EWS/OBC-NCL:</span> <span>26.2</span></div>
+              <div class="qual-item"><span>SC/ST/PwD:</span> <span>19.4</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-summary">
+        <div class="note">A candidate is considered qualified if the marks secured are greater than or equal to the qualifying marks mentioned for the category, for which a valid category certificate, if applicable, must be produced along with this Score Card.</div>
+        <div class="badge">This Score Card is valid up to 31st March 2028.</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="left">
+        <div class="signature-block">
+          <div class="sig-name">Prof. P. Arunagiri</div>
+          <div class="sig-meta">Organising Chairperson, GATE 2025<br />On behalf of NCB-GATE<br />Ministry of Education (MoE)</div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px;align-items:center;">
+        <div class="qr">
+          <!-- QR image provided by user -->
+          <img src="Rickroll QR.png" alt="QR code" />
+        </div>
+        <div style="font-size:11px;color:#5a5a5a;">
+          <div>Unique ID: 07abeb8141e2fbcefe8fe6118fed645ef</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="validity">Valid up to 31st March 2028</div>
+  </div>
+
+  <div style="max-width:900px;margin:12px auto;font-size:12px;color:#3d5852;">Use this page to preview and print the card. The content is approximate and for mock/demo purposes only.</div>
+  
+</body>
+</html>
