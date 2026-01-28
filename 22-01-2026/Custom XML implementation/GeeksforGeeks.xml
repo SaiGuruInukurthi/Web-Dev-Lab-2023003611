@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="GeeksforGeeks.css"?>
+
+<GeeksforGeeks>
+    <header>
+        <logo>
+            <logo_icon>&lt;/&gt;</logo_icon>
+            <logo_text>GeeksforGeeks</logo_text>
+        </logo>
+        <tagline>A Computer Science Portal for Geeks</tagline>
+    </header>
+
+    <hero>
+        <hero_title>Learn. Practice. Excel.</hero_title>
+        <hero_subtitle>Master programming with our curated tutorials and practice problems</hero_subtitle>
+    </hero>
+
+    <main_content>
+        <section>
+            <section_header>
+                <section_icon>⚡</section_icon>
+                <section_title>Algorithms</section_title>
+            </section_header>
+            <topics_grid>
+                <topic>
+                    <topic_icon>🎯</topic_icon>
+                    <topic_name>Greedy Algorithms</topic_name>
+                    <topic_desc>Optimal local choices</topic_desc>
+                </topic>
+                <topic>
+                    <topic_icon>🎲</topic_icon>
+                    <topic_name>Randomised Algorithms</topic_name>
+                    <topic_desc>Probabilistic approaches</topic_desc>
+                </topic>
+                <topic>
+                    <topic_icon>🔍</topic_icon>
+                    <topic_name>Searching Algorithms</topic_name>
+                    <topic_desc>Find elements efficiently</topic_desc>
+                </topic>
+                <topic>
+                    <topic_icon>📊</topic_icon>
+                    <topic_name>Sorting Algorithms</topic_name>
+                    <topic_desc>Arrange data in order</topic_desc>
+                </topic>
+            </topics_grid>
+        </section>
+
+        <section>
+            <section_header>
+                <section_icon>🗄️</section_icon>
+                <section_title>Data Structures</section_title>
+            </section_header>
+            <topics_grid>
+                <topic>
+                    <topic_icon>📋</topic_icon>
+                    <topic_name>Arrays</topic_name>
+                    <topic_desc>Contiguous memory storage</topic_desc>
+                </topic>
+                <topic>
+                    <topic_icon>📚</topic_icon>
+                    <topic_name>Stacks</topic_name>
+                    <topic_desc>LIFO data structure</topic_desc>
+                </topic>
+                <topic>
+                    <topic_icon>🎫</topic_icon>
+                    <topic_name>Queues</topic_name>
+                    <topic_desc>FIFO data structure</topic_desc>
+                </topic>
+                <topic>
+                    <topic_icon>🔗</topic_icon>
+                    <topic_name>Linked Lists</topic_name>
+                    <topic_desc>Dynamic node connections</topic_desc>
+                </topic>
+            </topics_grid>
+        </section>
+
+        <section>
+            <section_header>
+                <section_icon>🌐</section_icon>
+                <section_title>Web Technologies</section_title>
+            </section_header>
+            <topics_grid>
+                <topic>
+                    <topic_icon>📝</topic_icon>
+                    <topic_name>HTML5</topic_name>
+                    <topic_desc>Structure your web pages</topic_desc>
+                </topic>
+                <topic>
+                    <topic_icon>🎨</topic_icon>
+                    <topic_name>CSS3</topic_name>
+                    <topic_desc>Style with elegance</topic_desc>
+                </topic>
+                <topic>
+                    <topic_icon>⚙️</topic_icon>
+                    <topic_name>JavaScript</topic_name>
+                    <topic_desc>Add interactivity</topic_desc>
+                </topic>
+                <topic>
+                    <topic_icon>🐘</topic_icon>
+                    <topic_name>PHP</topic_name>
+                    <topic_desc>Server-side scripting</topic_desc>
+                </topic>
+            </topics_grid>
+        </section>
+
+        <section>
+            <section_header>
+                <section_icon>💻</section_icon>
+                <section_title>Programming Languages</section_title>
+            </section_header>
+            <topics_grid>
+                <topic>
+                    <topic_icon>🔵</topic_icon>
+                    <topic_name>C / C++</topic_name>
+                    <topic_desc>System-level programming</topic_desc>
+                </topic>
+                <topic>
+                    <topic_icon>☕</topic_icon>
+                    <topic_name>Java</topic_name>
+                    <topic_desc>Enterprise applications</topic_desc>
+                </topic>
+                <topic>
+                    <topic_icon>🐍</topic_icon>
+                    <topic_name>Python</topic_name>
+                    <topic_desc>Versatile and readable</topic_desc>
+                </topic>
+                <topic>
+                    <topic_icon>💎</topic_icon>
+                    <topic_name>Ruby</topic_name>
+                    <topic_desc>Elegant web development</topic_desc>
+                </topic>
+            </topics_grid>
+        </section>
+
+        <section>
+            <section_header>
+                <section_icon>🗃️</section_icon>
+                <section_title>Database Management</section_title>
+            </section_header>
+            <topics_grid>
+                <topic>
+                    <topic_icon>📖</topic_icon>
+                    <topic_name>DBMS Basics</topic_name>
+                    <topic_desc>Fundamentals of databases</topic_desc>
+                </topic>
+                <topic>
+                    <topic_icon>📐</topic_icon>
+                    <topic_name>ER Diagrams</topic_name>
+                    <topic_desc>Entity relationships</topic_desc>
+                </topic>
+                <topic>
+                    <topic_icon>🔧</topic_icon>
+                    <topic_name>Normalization</topic_name>
+                    <topic_desc>Reduce data redundancy</topic_desc>
+                </topic>
+                <topic>
+                    <topic_icon>🔄</topic_icon>
+                    <topic_name>Transactions</topic_name>
+                    <topic_desc>ACID properties</topic_desc>
+                </topic>
+            </topics_grid>
+        </section>
+    </main_content>
+
+    <stats_section>
+        <stat>
+            <stat_number>10M+</stat_number>
+            <stat_label>Learners</stat_label>
+        </stat>
+        <stat>
+            <stat_number>1000+</stat_number>
+            <stat_label>Tutorials</stat_label>
+        </stat>
+        <stat>
+            <stat_number>500+</stat_number>
+            <stat_label>Practice Problems</stat_label>
+        </stat>
+        <stat>
+            <stat_number>50+</stat_number>
+            <stat_label>Courses</stat_label>
+        </stat>
+    </stats_section>
+
+    <footer>
+        <footer_text>© 2026 GeeksforGeeks Clone | Built with XML and CSS</footer_text>
+        <footer_credits>A Computer Science Portal for Geeks - Made for Web Dev Lab</footer_credits>
+    </footer>
+</GeeksforGeeks>

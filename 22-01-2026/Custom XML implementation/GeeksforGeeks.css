@@ -1,0 +1,256 @@
+/* =====================================================
+   GeeksforGeeks Clone - Premium CSS Stylesheet
+   A Modern, Elegant Design using XML + CSS
+   ===================================================== */
+
+/* === Root Element & Base Styles === */
+GeeksforGeeks {
+    display: block;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #e8e8e8;
+    line-height: 1.6;
+}
+
+/* === Header Section === */
+header {
+    display: block;
+    background: linear-gradient(90deg, #00c853 0%, #00e676 50%, #69f0ae 100%);
+    padding: 20px 40px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 200, 83, 0.4);
+}
+
+logo {
+    display: block;
+    margin-bottom: 8px;
+}
+
+logo_icon {
+    display: inline;
+    font-size: 32px;
+    font-weight: 900;
+    color: #1a1a2e;
+    margin-right: 10px;
+    font-family: 'Courier New', monospace;
+}
+
+logo_text {
+    display: inline;
+    font-size: 36px;
+    font-weight: 800;
+    color: #1a1a2e;
+    letter-spacing: -1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+tagline {
+    display: block;
+    font-size: 14px;
+    color: #1a1a2e;
+    font-weight: 500;
+    opacity: 0.85;
+    letter-spacing: 0.5px;
+}
+
+/* === Hero Section === */
+hero {
+    display: block;
+    text-align: center;
+    padding: 60px 40px;
+    background: linear-gradient(180deg, rgba(0, 200, 83, 0.1) 0%, transparent 100%);
+}
+
+hero_title {
+    display: block;
+    font-size: 48px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #00e676 0%, #69f0ae 50%, #b9f6ca 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 16px;
+    letter-spacing: -1px;
+}
+
+hero_subtitle {
+    display: block;
+    font-size: 18px;
+    color: #a8a8b8;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* === Main Content Area === */
+main_content {
+    display: block;
+    padding: 20px 40px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* === Section Cards === */
+section {
+    display: block;
+    background: linear-gradient(145deg, #1e1e32 0%, #252540 100%);
+    border-radius: 20px;
+    padding: 28px 32px;
+    margin-bottom: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+section:hover {
+    box-shadow: 0 12px 40px rgba(0, 200, 83, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+section_header {
+    display: block;
+    text-align: center;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid rgba(0, 230, 118, 0.3);
+}
+
+section_icon {
+    display: block;
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+section_title {
+    display: block;
+    font-size: 26px;
+    font-weight: 700;
+    color: #00e676;
+    letter-spacing: 0.5px;
+}
+
+/* === Topics Grid === */
+topics_grid {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+topic {
+    display: inline-block;
+    width: 46%;
+    max-width: 400px;
+    min-width: 200px;
+    height: 120px;
+    background: linear-gradient(145deg, #2a2a45 0%, #1e1e32 100%);
+    border-radius: 16px;
+    padding: 24px 20px;
+    margin: 8px 1.5%;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+topic:hover {
+    background: linear-gradient(145deg, #323250 0%, #252540 100%);
+    box-shadow: 0 6px 24px rgba(0, 200, 83, 0.2);
+    border-color: rgba(0, 230, 118, 0.3);
+}
+
+topic_icon {
+    display: block;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+topic_name {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+topic_desc {
+    display: block;
+    font-size: 12px;
+    color: #8888a0;
+    font-weight: 400;
+}
+
+/* === Stats Section === */
+stats_section {
+    display: block;
+    background: linear-gradient(90deg, #00c853 0%, #00e676 50%, #69f0ae 100%);
+    padding: 40px 20px;
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+
+stat {
+    display: inline-block;
+    width: 20%;
+    min-width: 140px;
+    padding: 16px;
+    vertical-align: top;
+}
+
+stat_number {
+    display: block;
+    font-size: 42px;
+    font-weight: 800;
+    color: #1a1a2e;
+    margin-bottom: 4px;
+}
+
+stat_label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a2e;
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* === Footer Section === */
+footer {
+    display: block;
+    background: #0a0a16;
+    padding: 30px 40px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+footer_text {
+    display: block;
+    font-size: 14px;
+    color: #6a6a80;
+    margin-bottom: 8px;
+}
+
+footer_credits {
+    display: block;
+    font-size: 12px;
+    color: #00e676;
+    font-weight: 500;
+}
+
+/* === Responsive Adjustments (CSS-only approximation) === */
+@media screen and (max-width: 768px) {
+    hero_title {
+        font-size: 32px;
+    }
+
+    topic {
+        width: 45%;
+    }
+
+    stat {
+        width: 45%;
+    }
+}
