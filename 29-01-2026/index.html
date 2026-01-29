@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Weather — Minimal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <div class="brand">WH</div>
+      <nav class="nav">
+        <button id="geoBtn" title="Use my location">My location</button>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1 class="title">Weather</h1>
+      <p class="subtitle">Minimal, fast and beautiful — updated live.</p>
+
+      <form id="searchForm" class="search" autocomplete="off">
+        <input id="cityInput" type="search" placeholder="Search city (e.g. London)" aria-label="Search city">
+        <button type="submit">Search</button>
+      </form>
+
+      <article id="card" class="card hidden">
+        <div class="card-left">
+          <div id="city" class="city">—</div>
+          <div id="desc" class="desc">—</div>
+          <div class="temp-row">
+            <div id="temp" class="temp">—°</div>
+            <img id="icon" class="icon" alt="weather icon" src="" />
+          </div>
+        </div>
+        <div class="card-right">
+          <div class="meta">Feels: <span id="feels">—°</span></div>
+          <div class="meta">Humidity: <span id="hum">—%</span></div>
+          <div class="meta">Wind: <span id="wind">— m/s</span></div>
+        </div>
+      </article>
+
+      <div id="msg" class="msg"></div>
+    </section>
+
+    <footer class="foot">API: <code>OpenWeatherMap</code> · UI inspired by Nothing's minimalism</footer>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
