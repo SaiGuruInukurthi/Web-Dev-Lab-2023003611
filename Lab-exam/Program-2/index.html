@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Toggle Light Example</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height:1.5; padding:2rem; max-width:600px; margin:auto; }
+    .center { text-align:center; }
+    img#myImage { width:100px; height:auto; display:block; margin:0.5rem auto; }
+    .controls { display:flex; gap:1rem; justify-content:center; }
+    button { padding:0.5rem 1rem; font-size:1rem; cursor:pointer; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>What Can JavaScript Do?</h1>
+    <p>JavaScript can change HTML attribute values. Here we change the <code>src</code> of an image to toggle a light.</p>
+    <div class="center">
+      <img id="myImage" src="Light_Off.jpeg" alt="Light bulb (off)" />
+      <div class="controls" role="group" aria-label="Light controls">
+        <button id="onBtn" type="button">Turn on the light</button>
+        <button id="offBtn" type="button">Turn off the light</button>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Cache elements
+    const img = document.getElementById('myImage');
+    const onBtn = document.getElementById('onBtn');
+    const offBtn = document.getElementById('offBtn');
+
+    function turnOn() {
+      img.src = 'Light__On.jpeg';
+      img.alt = 'Light bulb (on)';
+    }
+
+    function turnOff() {
+      img.src = 'Light_Off.jpeg';
+      img.alt = 'Light bulb (off)';
+    }
+
+    // Attach event listeners
+    onBtn.addEventListener('click', turnOn);
+    offBtn.addEventListener('click', turnOff);
+
+    // Show a helpful alt message if an image can't be loaded
+    img.addEventListener('error', () => {
+      img.alt = 'Image not found — ensure Light__On.jpeg and Light_Off.jpeg are in the same folder.';
+    });
+  </script>
+</body>
+</html>
