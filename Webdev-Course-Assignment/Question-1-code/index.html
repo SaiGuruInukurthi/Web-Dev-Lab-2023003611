@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Catalog</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2rem; }
+        .book-item { padding: 10px; border: 1px solid #ddd; margin-bottom: 10px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h2>Available Books</h2>
+    <div id="catalog-container"></div>
+    <script>
+        const storeData = {
+            catalog: [
+                { bookId: 101, title: "The Pragmatic Programmer", author: "David Thomas", price: 750 }
+            ]
+        };
+        let htmlContent = "";
+        storeData.catalog.forEach(item => {
+            htmlContent += <div class="book-item">
+                <h3> + "$" + {item.title}</h3>
+                <p>Written by:  + "$" + {item.author}</p>
+                <p>Cost: INR  + "$" + {item.price}</p>
+            </div>;
+        });
+        document.getElementById("catalog-container").innerHTML = htmlContent;
+    </script>
+</body>
+</html>

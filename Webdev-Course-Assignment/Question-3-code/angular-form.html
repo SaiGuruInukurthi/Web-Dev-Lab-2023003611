@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Careers Application</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <style>body { font-family: 'Segoe UI', sans-serif; padding: 20px; }</style>
+</head>
+<body ng-app="careerApp" ng-controller="FormCtrl">
+    <h2>Apply for a Role</h2>
+    
+    <fieldset style="width: 300px;">
+        <legend>Application Details</legend>
+        <p>Applicant: <input type="text" ng-model="candidate.fullName"></p>
+        <p>Email ID: <input type="email" ng-model="candidate.emailId"></p>
+        <p>Applying For: <input type="text" ng-model="candidate.jobRole"></p>
+    </fieldset>
+
+    <div style="margin-top: 20px; background: #f9f9f9; padding: 10px; width: 300px;">
+        <h4>Live Output:</h4>
+        <strong>Name:</strong> {{ candidate.fullName }} <br>
+        <strong>Email:</strong> {{ candidate.emailId }} <br>
+        <strong>Role:</strong> {{ candidate.jobRole }}
+    </div>
+
+    <script>
+        angular.module('careerApp', [])
+        .controller('FormCtrl', function($scope) {
+            $scope.candidate = {};
+        });
+    </script>
+</body>
+</html>
